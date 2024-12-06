@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "modelsbases_backend": {
+      "main": "src/modelsbases_backend/main.mo",
+      "type": "motoko"
+    },
+    "modelsbases_frontend": {
+      "dependencies": [
+        "modelsbases_backend"
+      ],
+      "source": [
+        "src/modelsbases_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "modelsbases_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
